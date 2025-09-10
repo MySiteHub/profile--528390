@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* 默认颜色变量（会被主题CSS覆盖） */
+  --profile-primary: #2d6f6b;
+  --profile-accent: #f5d742;
+  --profile-background: #ffffff;
+  --profile-text: #171717;
+  --profile-section-bg: #f5f5f5;
+  --profile-hero-bg: #2d6f6b;
+  --profile-about-bg: #f5f5f5;
+  --profile-contact-bg: #2d6f6b;
+  --profile-name-color: #f5d742;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+}
+
+.hero-right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-greeting {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.hero-name {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* About Section */
+.about-section {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.about-button:hover {
+  opacity: 0.8;
+}
+
+/* Photos Section */
+.photos-section {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.photos-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo-item {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-right {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.contact-section-title {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.contact-group {
+  margin-bottom: 50px;
+}
+
+.contact-group-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-company {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-detail {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .hero-left {
+    padding: 40px;
+  }
+  
+  .hero-name {
+    font-size: 80px;
+  }
+  
+  .hero-greeting {
+    font-size: 32px;
+  }
+  
+  .about-section,
+  .photos-section {
+    padding: 60px 40px;
+  }
+  
+  .about-title,
+  .photos-title {
+    font-size: 48px;
+  }
+  
+  .photos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-section {
+    flex-direction: column;
+  }
+  
+  .contact-right {
+    padding: 40px;
+  }
+  
+  .contact-title {
+    font-size: 48px;
+  }
+}
