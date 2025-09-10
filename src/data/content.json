@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "greeting": "hello me",
+    "name": "dada",
+    "title": "model",
+    "image": "https://image.math-ai.dev/images/1757465068733-agyujj.jpeg"
+  },
+  "about": {
+    "title": "关于我",
+    "description1": "xxxxx"
+  },
+  "photos": {
+    "title": "个人照片",
+    "images": []
+  },
+  "contact": {
+    "title": "联系我",
+    "image": "https://image.math-ai.dev/images/1757465102653-uk2r28.jpeg",
+    "representation": {
+      "manager": {
+        "name": "xx",
+        "email": "aaa@qq.com"
+      }
+    }
+  }
+}
