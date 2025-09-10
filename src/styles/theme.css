@@ -1,0 +1,105 @@
+/* Profile模板主题CSS - 温暖亲和 */
+:root {
+  --profile-primary: #a16207;
+  --profile-accent: #ea580c;
+  --profile-background: #ffffff;
+  --profile-text: #171717;
+  --profile-section-bg: #fef7ed;
+  
+  /* Profile特色变量 */
+  --profile-hero-bg: #a16207;
+  --profile-about-bg: #fef7ed;
+  --profile-contact-bg: #a16207;
+  --profile-name-color: #ea580c;
+}
+
+/* Hero Section 样式 */
+.hero-left {
+  background-color: var(--profile-hero-bg) !important;
+  color: white !important;
+}
+
+.hero-right {
+  background-color: var(--profile-section-bg) !important;
+}
+
+.hero-greeting {
+  color: var(--profile-name-color) !important;
+}
+
+.hero-name {
+  color: white !important;
+}
+
+.hero-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* About Section 样式 */
+.about-section {
+  background-color: var(--profile-about-bg) !important;
+}
+
+.about-title {
+  color: var(--profile-primary) !important;
+}
+
+.about-description {
+  color: var(--profile-text) !important;
+}
+
+.about-button {
+  background-color: var(--profile-accent) !important;
+  color: var(--profile-text) !important;
+}
+
+/* Photos Section 样式 */
+.photos-section {
+  background-color: var(--profile-background) !important;
+}
+
+.photos-title {
+  color: var(--profile-primary) !important;
+}
+
+/* Contact Section 样式 */
+.contact-left {
+  background-color: var(--profile-section-bg) !important;
+}
+
+.contact-right {
+  background-color: var(--profile-contact-bg) !important;
+  color: white !important;
+}
+
+.contact-title {
+  color: var(--profile-name-color) !important;
+}
+
+.contact-section-title {
+  color: white !important;
+}
+
+.contact-group-title {
+  color: white !important;
+}
+
+.contact-company {
+  color: white !important;
+}
+
+.contact-name {
+  color: white !important;
+}
+
+.contact-detail {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.social-link {
+  color: white !important;
+}
+
+.social-link:hover {
+  color: var(--profile-name-color) !important;
+}
